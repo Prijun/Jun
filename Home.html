@@ -1,1 +1,63 @@
-html,css,JavaScript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jun</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Jun</h1>
+    </header>
+    <main>
+        <section class="auth">
+            <button id="loginBtn">Login</button>
+            <button id="signupBtn">Sign Up</button>
+        </section>
+        <section class="stories">
+            <h2>Stories</h2>
+            <div class="story-container">
+                <!-- Story items will be inserted here by JavaScript -->
+            </div>
+        </section>
+        <section class="posts">
+            <h2>Posts</h2>
+            <div class="post-container">
+                <!-- Post items will be inserted here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals for Login and Sign Up -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="newUsername">Username:</label>
+                <input type="text" id="newUsername" name="newUsername" required>
+                <label for="newPassword">Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
